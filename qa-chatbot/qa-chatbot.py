@@ -10,10 +10,10 @@ GOOGLE_API_KEY = os.getenv("GOOGLEKEY")
 
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",  ## change model based on requirment
+    model="gemini-2.5-flash-lite",  ## change model based on requirement
     google_api_key=GOOGLE_API_KEY,
     temperature=0,
-    max_output_tokens=500
+    max_output_tokens=200     ## Optional, Change output token size if required
 )
 
 
